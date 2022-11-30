@@ -27,3 +27,31 @@ html {
   font-size: 10rem;
   flex-flow: column;
 }
+
+.navbar-menu {
+  width: 100%;
+  height: 100px;
+  background-color: red;
+}
+
+.navbar-burger {
+  width: 100px;
+  aspect-ratio: 1;
+  background-color: olive;
+}
+
+@media (max-width: 600px) {
+  .navbar-menu {
+    visibility: hidden;
+  }
+}
+
+@media (min-width: 600px) {
+  .navbar-menu {
+    visibility: visible;
+    display: block;
+  }
+  .navbar-burger {
+    visibility: hidden;
+  }
+}
